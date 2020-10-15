@@ -1,0 +1,339 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+  
+	<!-- Navigation end -->
+
+	<!-- Top banner -->
+	<section class="fh5co-top-banner">
+		<div class="top-banner__inner site-container">
+			<div class="top-banner__image">
+				<img src="{% static 'images/formal.jpg' %}" style="width: 100%;" alt="author image">
+			</div>
+			<div class="top-banner__text">
+				<div class="top-banner__text-up">
+					<span class="brand-span">Hello! I'm</span>
+					<h2 class="top-banner__h2">Mahmoud</h2>
+				</div>
+				<div class="top-banner__text-down">
+					<h2 class="top-banner__h2">Emad</h2>
+					<span class="brand-span">Full-stack / Python-Django developer</span>
+				</div>
+				<p>Can one man change the world?
+					One man for all tasks..</p>
+				<a href="#fh5co-about-me" class="brand-button">Read bio > </a>
+			</div>
+		</div>
+	</section>
+	<!-- Top banner end -->
+
+	<!-- About me -->
+	<section class="fh5co-about-me" id="fh5co-about-me">
+		<div class="about-me-inner site-container">
+			<article class="portfolio-wrapper">
+				<div class="portfolio__img">
+					<img src="{% static 'images/me.jpg' %}" class="about-me__profile" alt="about me profile picture">
+				</div>
+				<div class="portfolio__bottom">
+					<div class="portfolio__name">
+						<span>M</span>
+						<h2 class="universal-h2" style='font-size: 45px;'>ahmoud Emad</h2>
+					</div>
+					<p>Mahmoud is an artist obsessed with the world of software, artificial intelligence and web development, interested in different fields and strives to continue learning until he becomes an old man </p>
+				</div>
+			</article>
+			<div class="about-me__text">
+				<div class="about-me-slider">
+					<div class="about-me-single-slide">
+						<h2 class="universal-h2 universal-h2-bckg">About me</h2>
+						<p><span>M</span> ahmoud Emad Hosny | <br>
+							Graduated from - <small> Pharaohs Higher Institute of Computers and Information Systems </small> 
+							Interested in learning new technologies, competitive programming, my passion for programming using (back-end web development using Django with two years experience, desktop application development using Tkinter and PyQt4 & 5), good at algorithms and still learning, strong with Python with three years of experience.</p>
+						<h4>Challenge ?</h4>
+						<a href="#" style="text-decoration: none;"><p class="p-white">Test me</p></a>
+					</div>
+					<div class="about-me-single-slide">
+						<h2 class="universal-h2 universal-h2-bckg">Career objective</h2>
+						<p><span>I</span> Seeking an opportunity to work as a software engineer, to obtain and secure a position that will enable me to use my organization skills as well as my ability to work well with people. I am a quick learner. I want to work in a suitable environment that would challenge my technical skills and give me direction</p>
+						<h4>Innovative</h4>
+						<a href="#fh5co-books" style="text-decoration: none;"><p class="p-white">Project's ?</p></a>
+					</div>
+					<div class="about-me-single-slide">
+						<h2 class="universal-h2 universal-h2-bckg">Career objective2</h2>
+						<p><span>H</span> e has work appearing or forthcoming in over a dozen venues, including Buzzy Mag, The Spirit of Poe, and the British Fantasy Society journal Dark Horizons. He is also CEO of a company, specializing in custom book publishing and social media marketing services, have created a community for authors to learn and connect.He has work appearing or forthcoming in over a dozen venues, including Buzzy Mag, The Spirit of Poe, and have created a community for authors to learn and connect.</p>
+						<h4>Author</h4>
+						<p class="p-white">See me</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about-me-bckg"></div>
+	</section>
+	<section class="fh5co-about-me" id="fh5co-about-me">
+		<div class="about-me-inner site-container">
+			<article class="portfolio-wrapper">
+				<div class="portfolio__img">
+					<img src="{% static 'images/testmeo.jpg' %}" class="about-me__profile" alt="about me profile picture">
+				</div>
+				<div class="portfolio__bottom">
+					<div class="portfolio__name">
+						<span>M</span>
+						<h2 class="universal-h2" style="font-size: 42px;">ahmoud Emad</h2>
+					</div>
+					<p>Mahmoud came up with this simple idea to gain more skills, competitive experience, and challenge skills by writing a software issue.</p>
+				</div>
+			</article>
+			<div class="about-me__text">
+				<div class="about-me-slider">
+					<div class="about-me-single-slide">
+						<h2 class="universal-h2 universal-h2-bckg">Test Me</h2>
+						<form method="POST" class="contact-form">
+                            {% csrf_token %}
+
+                                {{form.Name}}
+                                {{form.email}}
+                                <p style="color: #fff;">{{form.errors}}</p>
+
+                            {{form.text}}
+                            <input type="submit" name="submit" value="Submit" class="submit-button" style="
+                            padding: 19px 50px;
+                            text-transform: uppercase;
+                            font-size: 12px;
+                            color: #fff;
+                            background-color: #c18f59;
+                            border: none;
+                            border-radius: 3px;
+                            cursor: pointer;
+							transition: 0.3s ease;">
+							
+                        </form>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="about-me-bckg2"></div>
+	</section>
+	<!-- About me end -->
+	<section class="fh5co-about-me backhead" id="fh5co-about-me">
+		<div class="about-me-inner site-container">
+			<article class="portfolio-wrapper">
+				<div class="portfolio__img">
+					<img src="{% static 'images/me.jpg' %}" class="about-me__profile" alt="about me profile picture">
+				</div>
+				<div class="portfolio__bottom">
+					<div class="portfolio__name">
+						<span>M</span>
+						<h2 class="universal-h2" style="font-size: 42px;">ahmoud Emad</h2>
+					</div>
+					<p>Mahmoud is an artist obsessed with the world of software, artificial intelligence and web development, interested in different fields and strives to continue learning until he becomes an old man </p>
+				</div>
+			</article>
+			<div class="about-me__text">
+				<div class="about-me-slider">
+					<div class="about-me-single-slide">
+						<h2 class="universal-h2 universal-h2-bckg">Skill's</h2>
+						<table class="table table-transparent" style="color: #c18f59;">
+							<thead>
+							  <tr>
+								<th scope="col">#</th>
+								<th scope="col">Name</th>
+								<th scope="col">knowledge</th>
+								<th scope="col">level</th>
+							  </tr>
+							</thead>
+							<tbody style="font-size: 15px;">
+							  <tr>
+								<th scope="row">1</th>
+								<small><td>Python Programming - 2/3</td></small>
+								<td>80%</td>
+								<td>Very Good</td>
+							  </tr>
+							  <tr>
+								<th scope="row">2</th>
+								<td>Object oriented programming</td>
+								<td>80%</td>
+								<td>Very Good</td>
+							  </tr>
+							  <tr>
+								<th scope="row">3</th>
+								<td>Django Fraemwork</td>
+								<td>80%</td>
+								<td>Very Good</td>
+							  </tr>
+							  <tr>
+								<th scope="row">4</th>
+								<td>Django Rest Fraemwork</td>
+								<td>50%</td>
+								<td>Good</td>
+							  </tr>
+							  <tr>
+								<th scope="row">5</th>
+								<td>SQL (PostgreSQL)</td>
+								<td>70%</td>
+								<td>Very Good</td>
+							  </tr>
+							  <tr>
+								<th scope="row">6</th>
+								<td>Amazon Web Services</td>
+								<td>80%</td>
+								<td>Very Good</td>
+							  </tr>
+							  <tr>
+								<th scope="row">7</th>
+								<td>Linux Command Line</td>
+								<td>70%</td>
+								<td>Very Good</td>
+							  </tr>
+							  <tr>
+								<th scope="row">8</th>
+								<td>Git and Github</td>
+								<td>90%</td>
+								<td>Excellent</td>
+							  </tr>
+							  <tr>
+								<th scope="row">9</th>
+								<td>Html - Html5</td>
+								<td>80%</td>
+								<td>Very Good</td>
+							  </tr>
+							  <tr>
+								<th scope="row">10</th>
+								<td>Css - Css3</td>
+								<td>70%</td>
+								<td>Very Good</td>
+							  </tr>
+							  <tr>
+								<th scope="row">11</th>
+								<td>Heroku</td>
+								<td>70%</td>
+								<td>Very Good</td>
+							  </tr>
+							  <tr>
+								<th scope="row">12</th>
+								<td>Docker</td>
+								<td>60%</td>
+								<td>Good</td>
+							  </tr>
+							  <tr>
+								<th scope="row">13</th>
+								<td>Bootstrap</td>
+								<td>60%</td>
+								<td>Good</td>
+							  </tr>
+							</tbody>
+						</table>
+						
+						
+					</div>
+					
+				</div>
+			</div>
+		<div class="about-me-bckg" style="background-image: url(static/images/Skills.jpeg);"></div>
+	</section>
+	<!-- projects -->
+	<section class="fh5co-books" id = "fh5co-books">
+		<div class="site-container">
+			<h2 class="universal-h2 universal-h2-bckg">Project's</h2>
+			<div class="books">
+				{% for project in allin %}
+					<a href="{% url 'Project_Ditail' project.slug %}"><div class="single-book">
+						<!-- <a href="https://flooopy-eco.herokuapp.com/" target="blank" class="single-book__img"> -->
+							{% if project.Image %}
+								<img src="{{ project.Image.url }}" alt="single book and cd">
+							{% endif %}
+							<div class="single-book_download">
+								<img src="{% static 'images/download.svg' %}"alt="book image">
+							</div>
+						</a>
+						<h4 class="single-book__title">{{project.Name}}</h4>
+						<span class="single-book__price">{{project.Category}}</span>
+					</div></a>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="books-brand-button">
+			<a href="{% url 'Project' %}" style="text-decoration: none;" class="brand-button">View more</a>
+		</div>
+	</section>
+	<!-- projects -->
+
+
+
+
+	<!-- Blog -->
+	<!-- <section class="fh5co-blog">
+		<div class="site-container">
+			<h2 class="universal-h2 universal-h2-bckg">My Blog</h2>
+			<div class="blog-slider blog-inner">
+				<div class="single-blog">
+					<div class="single-blog__img">
+						<img src="{% static 'images/blog1.jpg' %}" alt="blog image">
+					</div>
+					<div class="single-blog__text">
+						<h4>The Journey Under the Waves</h4>
+						<span>On August 28, 2015</span>
+						<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
+					</div>
+				</div>
+				<div class="single-blog">
+					<div class="single-blog__img">
+						<img src="{% static 'images/blog2.jpg' %}" alt="blog image">
+					</div>
+					<div class="single-blog__text">
+						<h4>The Journey Under the Waves</h4>
+						<span>On August 28, 2015</span>
+						<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
+					</div>
+				</div>
+				<div class="single-blog">
+					<div class="single-blog__img">
+						<img src="{% static 'images/blog2.jpg' %}" alt="blog image">
+					</div>
+					<div class="single-blog__text">
+						<h4>The Journey Under the Waves</h4>
+						<span>On August 28, 2015</span>
+						<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!-- Blog end -->
+
+	<!-- Quotes -->
+	<section class="fh5co-quotes">
+		<div class="site-container">
+			<div class="about-me-slider">
+				{% for comment in commentat %}				  
+					<div>
+						<h2 class="universal-h2 universal-h2-bckg">What People Are Saying</h2>
+						<p>“ {{comment.Comment}} ”</p><small style="color: #9e9292;">{{ comment.date |date:'y - m - d ' }}</small>
+						<img src="{% static 'images/quotes.svg' %}" alt="quotes svg">
+						<h4>{{comment.Name}}</h4>
+						<p>{{comment.Position}}</p>
+					</div>
+				{% endfor %}
+			</div>
+			<br><br>
+				<h5 style="color: #fff;">Leave You'r Point Of View</h5>
+				<form method="POST">
+					{% csrf_token %}
+					{{form_comment.Name}}
+					{{form_comment.Comment}}
+					<input type="submit" name="submit" value="Submit" class="submit-button" style="
+                            padding: 19px 50px;
+                            text-transform: uppercase;
+                            font-size: 12px;
+                            color: #fff;
+                            background-color: #c18f59;
+                            border: none;
+                            border-radius: 3px;
+                            cursor: pointer;
+							transition: 0.3s ease;">
+				</form>
+			
+		</div>
+		
+	</section>
+{% endblock body %}

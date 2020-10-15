@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+
+
+
+
+<section class="fh5co-about-me" id="fh5co-about-me">
+    <div class="about-me-inner site-container">
+        <article class="portfolio-wrapper">
+            <div class="portfolio__img">
+                <img src="{% static 'images/testmeo.jpg' %}" class="about-me__profile" alt="about me profile picture">
+            </div>
+            <div class="portfolio__bottom">
+                <div class="portfolio__name">
+                    <span>M</span>
+                    <h2 class="universal-h2" style="    font-size: 41px;">ahmoud Emad</h2>
+                </div>
+                <p>Mahmoud came up with this simple idea to gain more skills, competitive experience, and challenge skills by writing a software issue.</p>
+                <p>{{form.errors}}</p>
+                
+            </div>
+        </article>
+        <div class="about-me__text">
+            <div class="about-me-slider">
+                <div class="about-me-single-slide">
+                    <h2 class="universal-h2 universal-h2-bckg">Test Me</h2>
+                    <!-- <form method="POST">
+                        {% csrf_token %}
+                        {{form.Name}}
+                        {{form.email}}
+                        {{form.text}}
+                    </form> -->
+
+                        
+                        <form method="POST" class="contact-form">
+                            {% csrf_token %}
+
+                                {{form.Name}}
+                                {{form.email}}
+                                <p style="color: #fff;">{{form.errors}}</p>
+
+                            {{form.text}}
+                            <input type="submit" name="submit" value="Submit" class="submit-button" style="
+                            padding: 19px 50px;
+                            text-transform: uppercase;
+                            font-size: 12px;
+                            color: #fff;
+                            background-color: #c18f59;
+                            border: none;
+                            border-radius: 3px;
+                            cursor: pointer;
+                            transition: 0.3s ease;">
+                        </form>
+
+                    <!-- <a href="#" style="text-decoration: none;"><p class="p-white">Test me</p></a> -->
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="about-me-bckg2"></div>
+</section>
+
+
+
+{% endblock body %}

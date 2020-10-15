@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+  
+
+<section class="fh5co-top-banner" style="background-image: url({{allin.Image_Ditail.url}});">
+    <div class="top-banner__inner site-container" style="display: block; padding-top: 5%;">
+        <div class="top-banner__image">
+            {% if allin.Image_Ditail %}
+                <img src="{{allin.Image_Ditail.url}}" style="width: 100%;" alt="author image">
+            {% endif %}
+        </div>
+        <div class="top-banner__text">
+            <div class="top-banner__text-up">
+                <h2 class="top-banner__h2">{{allin.Name}}</h2>
+            </div>
+            <div class="top-banner__text-down">
+                <span class="brand-span">{ {{allin.Category}} }</span>
+            </div>
+            <p>{{allin.Discraption}}</p>
+        </div>
+    </div>
+</section>
+<hr>
+<section class="fh5co-about-me" id="fh5co-about-me">
+    <div class="about-me-inner site-container">
+        <article class="portfolio-wrapper">
+            <div class="portfolio__img">
+                <img src="{{ allin.Image4.url }}" class="about-me__profile" alt="about me profile picture">
+            </div>
+            <div class="portfolio__bottom">
+                {% if allin.Live %}
+                    <div class="portfolio__name">
+                        <a href="https://flooopy-eco.herokuapp.com/" style=" text-decoration: none;" target="blank" ><span style="font-size: 41px;">Live ?</span></a>
+                    </div>
+                {% else %}
+                    <div class="portfolio__name">
+                        <span style="font-size: 41px;">{{allin.Name}}</span>
+                    </div>
+                {% endif %}
+            </div>
+        </article>
+        <div class="about-me__text">
+            <div class="about-me-slider">
+                <div class="about-me-single-slide">
+                    <h2 class="universal-h2 universal-h2-bckg">More Image's</h2>
+                    <p><div class="moreimagesize">
+                        {% if allin.Image2 %}
+                            <img src="{{ allin.Image2.url }}" alt="single book and cd">
+                        {% endif %}
+                    </div></p>
+                </div>
+                <div class="about-me-single-slide">
+                    <h2 class="universal-h2 universal-h2-bckg">More Image's</h2>
+                    <p><div class="moreimagesize">
+                        {% if allin.Image3 %}
+                            <img src="{{ allin.Image3.url }}" alt="single book and cd">
+                        {% endif %}
+                    </div></p>
+                </div>
+                <div class="about-me-single-slide">
+                    <h2 class="universal-h2 universal-h2-bckg">More Image's</h2>
+                    <p><div class="moreimagesize">
+                        {% if allin.Image4 %}
+                            <img src="{{ allin.Image4.url }}" alt="single book and cd">
+                        {% endif %}
+                    </div></p>
+                </div>
+                <div class="about-me-single-slide">
+                    <h2 class="universal-h2 universal-h2-bckg">More Image's</h2>
+                    <p><div class="moreimagesize">
+                        {% if allin.Image5 %}
+                            <img src="{{ allin.Image5.url }}" alt="single book and cd">
+                        {% endif %}
+                    </div></p>
+                </div>
+                <div class="about-me-single-slide">
+                    <h2 class="universal-h2 universal-h2-bckg">More Image's</h2>
+                    <p><div class="moreimagesize">
+                        {% if allin.Image6 %}
+                            <img src="{{ allin.Image6.url }}" alt="single book and cd">
+                        {% endif %}
+                    </div></p>
+                </div>
+                <div class="about-me-single-slide">
+                    <h2 class="universal-h2 universal-h2-bckg">More Image's</h2>
+                    <p><div class="moreimagesize">
+                        {% if allin.Image7 %}
+                            <img src="{{ allin.Image7.url }}" alt="single book and cd">
+                        {% endif %}
+                    </div></p>
+                </div>
+                <div class="about-me-single-slide">
+                    <h2 class="universal-h2 universal-h2-bckg">More Image's</h2>
+                    <p><div class="moreimagesize">
+                        {% if allin.Image8 %}
+                            <img src="{{ allin.Image8.url }}" alt="single book and cd">
+                        {% endif %}
+                    </div></p>
+                </div>
+                <div class="about-me-single-slide">
+                    <h2 class="universal-h2 universal-h2-bckg">More Image's</h2>
+                    <p><div class="moreimagesize">
+                        {% if allin.Image9 %}
+                            <img src="{{ allin.Image9.url }}" alt="single book and cd">
+                        {% endif %}
+                    </div></p>
+                </div>
+                <div class="about-me-single-slide">
+                    <h2 class="universal-h2 universal-h2-bckg">More Image's</h2>
+                    <p><div class="moreimagesize">
+                        {% if allin.Image10 %}
+                            <img src="{{ allin.Image10.url }}" alt="single book and cd">
+                        {% endif %}
+                    </div></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-me-bckg" style="background-image: url({{allin.Image_Ditail.url}}); height: calc(108% + 150px);"></div>
+</section>
+
+
+{% endblock body %}

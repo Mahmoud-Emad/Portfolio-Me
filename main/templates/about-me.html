@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+  
+
+    <section class="fh5co-about-me backhead" id="fh5co-about-me">
+        <div class="about-me-inner site-container">
+            <article class="portfolio-wrapper">
+                <div class="portfolio__img">
+                    <img src="{% static 'images/me.jpg' %}" class="about-me__profile" alt="about me profile picture">
+                </div>
+                <div class="portfolio__bottom">
+                    <div class="portfolio__name">
+                        <span>M</span>
+                        <h2 class="universal-h2" style="font-size: 42px;">ahmoud Emad</h2>
+                    </div>
+                    <p>Mahmoud is an artist obsessed with the world of software, artificial intelligence and web development, interested in different fields and strives to continue learning until he becomes an old man </p>
+                </div>
+            </article>
+            <div class="about-me__text">
+                <div class="about-me-slider">
+                    
+                    <div class="about-me-single-slide">
+                        <h2 class="universal-h2 universal-h2-bckg">About me</h2>
+                        <p><span>M</span> ahmoud Emad Hosny | <br>
+                            Graduated from - <small> Pharaohs Higher Institute of Computers and Information Systems </small> 
+                            Interested in learning new technologies, competitive programming, my passion for programming using (back-end web development using Django with two years experience, desktop application development using Tkinter and PyQt4 & 5), good at algorithms and still learning, strong with Python with three years of experience.</p>
+                        <h4>Challenge ?</h4>
+                        </p>
+                        <a href="#fh5co-about-me" class="brand-button" style="text-decoration: none;">Test me > </a>
+                    </div>
+                    <div class="about-me-single-slide">
+                        <h2 class="universal-h2 universal-h2-bckg">Career objective</h2>
+                        <p><span>I</span> Seeking an opportunity to work as a software engineer, to obtain and secure a position that will enable me to use my organization skills as well as my ability to work well with people. I am a quick learner. I want to work in a suitable environment that would challenge my technical skills and give me direction</p>
+                        <h4>Innovative</h4>
+                        </p>
+                        <a href="#fh5co-about-me" class="brand-button" style="text-decoration: none;">Project's > </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-me-bckg"></div>
+    </section>
+    
+{% endblock body %}
+

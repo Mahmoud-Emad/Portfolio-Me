@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+  
+
+<section class="fh5co-about-me backhead" id="fh5co-about-me">
+    <div class="about-me-inner site-container">
+        <article class="portfolio-wrapper">
+            <div class="portfolio__img">
+                <img src="{% static 'images/testmeo.jpg' %}" class="about-me__profile" alt="about me profile picture">
+            </div>
+            <div class="portfolio__bottom">
+                <div class="portfolio__name">
+                    <span>M</span>
+                    <h2 class="universal-h2" style="font-size: 42px;">ahmoud Emad</h2>
+                </div>
+                <p>Mahmoud is an artist obsessed with the world of software, artificial intelligence and web development, interested in different fields and strives to continue learning until he becomes an old man </p>
+            </div>
+        </article>
+        <div class="about-me__text">
+            <div class="about-me-slider">
+                <div class="about-me-single-slide">
+                    <h2 class="universal-h2 universal-h2-bckg">Skill's</h2>
+                    <table class="table table-transparent" style="color: #c18f59;">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">knowledge</th>
+                            <th scope="col">level</th>
+                          </tr>
+                        </thead>
+                        <tbody style="font-size: 15px;">
+                          <tr>
+                            <th scope="row">1</th>
+                            <small><td>Python Programming - 2/3</td></small>
+                            <td>80%</td>
+                            <td>Very Good</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Object oriented programming</td>
+                            <td>80%</td>
+                            <td>Very Good</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Django Fraemwork</td>
+                            <td>80%</td>
+                            <td>Very Good</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Django Rest Fraemwork</td>
+                            <td>50%</td>
+                            <td>Good</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>SQL (PostgreSQL)</td>
+                            <td>70%</td>
+                            <td>Very Good</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>Amazon Web Services</td>
+                            <td>80%</td>
+                            <td>Very Good</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">7</th>
+                            <td>Linux Command Line</td>
+                            <td>70%</td>
+                            <td>Very Good</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">8</th>
+                            <td>Git and Github</td>
+                            <td>90%</td>
+                            <td>Excellent</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">9</th>
+                            <td>Html - Html5</td>
+                            <td>80%</td>
+                            <td>Very Good</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">10</th>
+                            <td>Css - Css3</td>
+                            <td>70%</td>
+                            <td>Very Good</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">11</th>
+                            <td>Heroku</td>
+                            <td>70%</td>
+                            <td>Very Good</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">12</th>
+                            <td>Docker</td>
+                            <td>60%</td>
+                            <td>Good</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">13</th>
+                            <td>Bootstrap</td>
+                            <td>60%</td>
+                            <td>Good</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                    
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="about-me-bckg" style="background-image: url(static/images/Skills.jpeg);"></div>
+</section>
+
+
+{% endblock body %}

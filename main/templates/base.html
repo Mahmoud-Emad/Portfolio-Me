@@ -1,0 +1,100 @@
+<!doctype html>
+{% load static %}
+<!--
+	
+      ____(0)>   >  {Cack}
+	  \____/
+	~~~~~~~~~~~~~~
+
+
+
+-->
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/slick.css' %}">
+	<title>Mahmoud Emad | Portfolio</title>
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav class="site-navigation">
+		<div class="site-navigation-inner site-container">
+			
+			<div class="main-navigation">
+				
+				<ul class="main-navigation__ul">
+					<li><a href="{% url 'home' %}">Homepage</a></li>
+					<li><a href="{% url 'aboutme' %}">About Me</a></li>
+					<li><a href="{% url 'Service' %}">Service & Skill's</a></li>
+					<li><a href="{% url 'test-me' %}">Experiment</a></li>
+					<li><a href="{% url 'Project' %}">My projects</a></li>
+				</ul>
+			</div>
+			<div id="myBtn" class="burger-container" onclick="myFunction(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<script>
+				function myFunction(x) {
+					x.classList.toggle("change");
+				}
+			</script>
+
+		</div>
+    </nav>
+    
+    {% block body %}
+      
+    {% endblock body %}
+	<footer class="site-footer">
+		<div class="site-container">
+			<div class="footer-inner">
+				<div class="footer-info">
+					<div class="footer-info__left">
+						<img src="{% static 'images/loogo.jpg' %}" style="width: 100%;" alt="about me image">
+						<p>Read more about me</p>
+					</div>
+					<div class="footer-info__right">
+						<h5>Get In Touch</h5>
+						<p class="footer-phone">Phone: 01144515810</p>
+						<p>Email : <small style="font-size: 64%;font-weight: 400;color: #c18f59;"> mahmoudemadhossni@gmail.com</small></p>
+						<div class="social-icons">
+							<a href="https://github.com/Mahmoud-Emad" target="_blank">
+								<img src="{% static 'images/git.png' %} " style="width: 35px;" alt="social icon"></a>
+							<a href="https://www.linkedin.com/in/mahmoud-emad-hossny-4aa53717a/" 
+							target="_blank"><img src="{% static 'images/linkedin.png' %} " style="width: 50px;" alt="social icon"></a>
+							<a href="https://www.facebook.com/people/A%C3%9Fo-Y%C3%B9siif/100010994918334" 
+							target="_blank"><img src="{% static 'images/facebook.png' %} " style="width: 40px;" alt="social icon"></a>
+						
+						</div>
+					</div>
+				</div>
+				<div class="footer-contact-form">
+					<h5>Contact Form</h5>
+					<form method="POST">
+						{% csrf_token %}
+						{{form_contact.Name}}
+						{{form_contact.Email}}
+						{{form_contact.Message}}
+						<input type="submit" name="submit" value="Submit" class="submit-button">
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!-- Footer end -->
+
+	<!-- Scripts -->
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<script src="{% static 'js/slick.min.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

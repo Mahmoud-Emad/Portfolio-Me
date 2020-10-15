@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+
+<section class="fh5co-quotes">
+    <div class="site-container">
+        <div class="about-me-slider">
+            <div>
+                <h2 class="universal-h2 universal-h2-bckg">Lot of thank's for you'r time</h2>
+                <p>“The e-mail has been received and the test is also received, and your problem 
+                    will be solved as soon as possible, then a mail will be sent to you with the correct 
+                    answer Please follow your mail and do not forget to look at the span box”</p>
+                <img src="{% static 'images/quotes.svg' %}" alt="quotes svg">
+                <h4>Mahmoud Emad</h4><br>
+                <a href="{% url 'home' %}" class="brand-button" style="text-decoration: none;">Home > </a>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock body %}

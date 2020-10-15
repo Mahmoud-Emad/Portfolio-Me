@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+
+
+
+
+
+
+
+
+<br>
+<section class="fh5co-books" id = "fh5co-books">
+    <div class="site-container">
+        <h2 class="universal-h2 universal-h2-bckg">Project's</h2>
+        <div class="books">
+            {% for project in allin %}
+            <a href="{% url 'Project_Ditail' project.slug %}">
+                <div class="single-book">
+                    <!-- <a href="https://flooopy-eco.herokuapp.com/" target="blank" class="single-book__img"> -->
+                        {% if project.Image %}
+                            <img src="{{ project.Image.url }}" alt="single book and cd">
+                        {% endif %}
+                        <div class="single-book_download">
+                            <img src="{% static 'images/download.svg' %}"alt="book image">
+                        </div>
+                    </a>
+                    <h4 class="single-book__title">{{project.Name}}</h4>
+                    <span class="single-book__price">{{project.Category}}</span>
+                </div></a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+
+
+{% endblock body %}
